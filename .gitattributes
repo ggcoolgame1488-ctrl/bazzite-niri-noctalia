@@ -1,0 +1,7 @@
+* text=auto
+*.sh text eol=lf
+*.kdl text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.env text eol=lf
+Containerfile text eol=lf
