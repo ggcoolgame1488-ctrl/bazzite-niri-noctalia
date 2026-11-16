@@ -46,12 +46,8 @@ dnf5 install -y \
 
 dnf5 install -y greetd
 
-dnf5 install -y \
-    --nogpgcheck \
-    --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' \
-    terra-release
-
-dnf5 install -y noctalia-greeter
+# Use Terra repository already configured in Bazzite.
+dnf5 install -y --enable-repo=terra noctalia-greeter
 
 # Create greeter user if package did not create it.
 if ! getent passwd greeter >/dev/null 2>&1; then
