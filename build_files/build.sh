@@ -85,9 +85,9 @@ noctalia-greeter-apply-appearance --setup-system
 # 4. Install default Niri configuration
 # ============================================================
 
-NIRI_CONFIG="/etc/skel/.config/niri/config.kdl"
+NIRI_CONFIG="/etc/niri/config.kdl"
 
-install -d -m 0755 /etc/skel/.config/niri
+install -d -m 0755 /etc/niri
 
 curl -fsSL \
     https://raw.githubusercontent.com/niri-wm/niri/v26.04/resources/default-config.kdl \
